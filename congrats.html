@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yayyy 💖</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color:white;
+    padding:40px;
+    overflow:hidden;
+}
+
+/* HEART CONFETTI */
+.heart {
+    position:absolute;
+    color:red;
+    animation:fall 6s linear infinite;
+}
+@keyframes fall {
+    0%{transform:translateY(-10vh);}
+    100%{transform:translateY(110vh);}
+}
+
+h1 {
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+p {
+    font-size:22px;
+    line-height:1.6;
+    background:rgba(255,255,255,0.2);
+    padding:25px;
+    border-radius:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Congratulations My Loveeeeeeeeeeeeeeeee 💖🎉</h1>
+
+<p>
+I Loveeeeeeeeeeeeeeeee Youuuuuuuuuuuuuuuuuuuuuuuuuu
+Theeeeeeeeeeeeeeeeeeeee Mostttttttttttttttttttttt
+Betuuuuuuuuuuuuuu Meriiiiii Jaannnnnnnnnnnnnnnn
+Mera Chhota Sa Pyaara Sa Bacchaaaaaaaaa
+Babyyyyyyy Queen 👑 Muffin 🧁😘💋❤️💕💖💓💝💗💘💞❣️🫀🫂🤌🏻🫶🏻💫✨
+<br><br>
+This is truly the happiest moment of my life. My heart is racing with excitement,
+my smile is unstoppable, and my happiness feels bigger than the entire universe.
+I feel like the luckiest person alive because YOU chose me,
+and that means more to me than words could ever explain.
+Every moment with you is precious, every conversation with you is special,
+and every smile of yours brightens my entire world instantly.
+I promise to always care for you, listen to you, respect you,
+and stand beside you through every high and low.
+I will always cherish you — your thoughts, your feelings,
+your dreams, your laughter, and even your little habits that make you uniquely YOU.
+You are not just important to me; you are deeply treasured in my heart.
+I’ll always notice the smallest things about you,
+remember what makes you happy, and protect the joy in your eyes.
+With you, ordinary moments become magical memories,
+simple days become unforgettable adventures,
+and life feels warm, colorful, and beautiful.
+You are my comfort, my excitement, my peace, my sunshine,
+and the most precious blessing in my world.
+I will cherish every second with you, every memory we create,
+and every future dream we build together.
+You are my favorite person, my safe place,
+and the most beautiful part of my life — always and forever.
+</p>
+
+<script>
+function heart(){
+    const h=document.createElement("div");
+    h.className="heart";
+    h.innerHTML="❤";
+    h.style.left=Math.random()*100+"vw";
+    h.style.fontSize=(20+Math.random()*30)+"px";
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),6000);
+}
+setInterval(heart,200);
+</script>
+
+</body>
+</html>
